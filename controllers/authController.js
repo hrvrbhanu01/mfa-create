@@ -1,7 +1,7 @@
 const bcrypt = require('bcrypt');
 const { sendEmail } = require('../services/emailServices');
 const { generateSecret, verifyOTP, generateQRCode } = require('../services/mfaServices');
-const User = require('../models/User');
+const User = require('../models/userModel');
 const qrcode = require('qrcode-terminal');
 const { totp } = require('otplib');
 
